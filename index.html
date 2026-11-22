@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FREE Haridwar & Rishikesh Trip 2026</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; }
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      padding: 32px 24px;
+      max-width: 420px;
+      width: 100%;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+      transition: all 0.4s ease;
+    }
+    .badge {
+      display: inline-block;
+      background: #ff9800;
+      color: #000;
+      font-weight: 700;
+      font-size: 12px;
+      padding: 5px 12px;
+      border-radius: 50px;
+      margin-bottom: 14px;
+      text-transform: uppercase;
+    }
+    h1 { font-size: 26px; margin-bottom: 10px; line-height: 1.3; }
+    p { font-size: 15px; color: #dcdcdc; margin-bottom: 22px; line-height: 1.5; }
+    .details {
+      background: rgba(0, 0, 0, 0.25);
+      border-radius: 12px;
+      padding: 14px;
+      margin-bottom: 22px;
+      text-align: left;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+    button {
+      width: 100%;
+      padding: 14px;
+      border: none;
+      border-radius: 12px;
+      background: #00e676;
+      color: #000;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform 0.15s ease;
+    }
+    button:active { transform: scale(0.97); }
+    .hidden { display: none; }
+    .prank-emoji { font-size: 56px; margin-bottom: 14px; }
+    .share-btn { background: #29b6f6; margin-top: 12px; }
+    .comedy-tag {
+      display: inline-block;
+      margin-top: 14px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: #ffd54f;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Screen 1: Fake Offer -->
+  <div class="card" id="offerScreen">
+    <span class="badge">Limited Giveaway • 3 Seats Left</span>
+    <h1>3D/2N Haridwar & Rishikesh Trip — 100% FREE! 🏔️</h1>
+    <p>Winter Special Sponsored Batch! Stay, Ganga Aarti, Rafting & Travel sab kuch bilkul free.</p>
+    <div class="details">
+      ✅ Train / Volvo Pickup & Drop<br>
+      ✅ Riverside Camp Stay + Meals<br>
+      ✅ Rishikesh River Rafting & Cafes<br>
+      ✅ Zero Booking Charges
+    </div>
+    <button onclick="revealPrank()">Claim My Free Ticket 🎟️</button>
+  </div>
+
+  <!-- Screen 2: Prank Reveal -->
+  <div class="card hidden" id="prankScreen">
+    <div class="prank-emoji">😌🙏🤣🤣😂😂</div>
+    <h1>Aankhein Band Karo...</h1>
+    <p style="font-size: 17px; color: #fff; margin-top: 10px;">
+      Ab gehri saans lo aur <b>Haridwar ki Ganga Aarti</b> aur <b>Rishikesh ke pahadon</b> ko imagine karo! 🏔️🌊<br><br>
+      Mubarak ho, aapki 100% FREE trip shuru ho chuki hai! 🤣🤣😂😂
+    </p>
+    <button class="share-btn" onclick="copyLink()">Share with your friends 🤣🤣😂😂</button>
+    <div class="comedy-tag">FULL COMEDY • PURE BACKCHODI 😂🔥</div>
+  </div>
+
+  <script>
+    function revealPrank() {
+      document.getElementById('offerScreen').classList.add('hidden');
+      document.getElementById('prankScreen').classList.remove('hidden');
+      document.body.style.background = "linear-gradient(135deg, #1a1a2e, #16213e, #0f3460)";
+    }
+    function copyLink() {
+      navigator.clipboard.writeText(window.location.href);
+      alert("Link copy ho gaya! Ab doston ke saath full comedy aur BACKCHODI karo 🤣🤣😂😂");
+    }
+  </script>
+
+</body>
+</html>
